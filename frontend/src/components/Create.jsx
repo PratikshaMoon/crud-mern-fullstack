@@ -13,7 +13,7 @@ const Create = () => {
     //turning off default functionality of form tag
     e.preventDefault();
     const addUser = {name, email, age}
-    const response = await fetch("http://localhost:5000" , {
+    const response = await fetch("https://mernbymoon.onrender.com/" , {
       method: "POST",
       body: JSON.stringify(addUser),
       //to solve cors issue 

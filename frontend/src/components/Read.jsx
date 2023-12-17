@@ -9,7 +9,7 @@ const Read = () => {
 
   async function getData() {
     try {
-      const response = await fetch("http://localhost:5000");
+      const response = await fetch("https://mernbymoon.onrender.com/");
       const result = await response.json();
 
       if (!response.ok) {
@@ -27,7 +27,7 @@ const Read = () => {
   }
 
   const handleDelete = async (_id)=>{
-      const response = await fetch(`http://localhost:5000/${_id}`,{
+      const response = await fetch(`https://mernbymoon.onrender.com//${_id}`,{
         method: "DELETE"
       })
       const result = await response.json()
