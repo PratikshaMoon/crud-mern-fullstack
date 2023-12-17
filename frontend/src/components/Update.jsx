@@ -17,7 +17,7 @@ const Update = () => {
 
   //getting data of a single user to edit it
   const getSingleUser = async()=>{
-    const response = await fetch(`https://mernbymoon.onrender.com//${id}`)
+    const response = await fetch(`https://mernbymoon.onrender.com/${id}`)
 
     const result = await response.json()
     console.log(result)
@@ -43,7 +43,7 @@ const Update = () => {
     e.preventDefault();
     const updatedUser = { name, email, age };
     try {
-      const response = await fetch(`https://mernbymoon.onrender.com//${id}`, {
+      const response = await fetch(`https://mernbymoon.onrender.com/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
